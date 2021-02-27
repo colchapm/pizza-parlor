@@ -39,6 +39,12 @@ Describe: Pizza.prototype.sizePrice()
 
 Expect(newOrder.sizePrice()).toEqual(14)
 
+Describe: Pizza.prototype.meatPrice()
+
+**Test 3** Test: "It should return price of the pie depending on number of meat toppings selected"
+
+Expect(newOrder.meatPrice()).toEqual(16.5)
+
 ## Known Bugs
 
 No known bugs at this time
