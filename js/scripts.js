@@ -1,9 +1,9 @@
 //Business Logic
 
-function Pizza(size, meatArray, veggies) {
+function Pizza(size, meatArray, veggieArray) {
   this.size = size;
   this.meatArray = meatArray;
-  this.veggies = veggies;
+  this.veggieArray = veggieArray;
   this.currentPrice = 0;
 }
 
@@ -22,6 +22,11 @@ Pizza.prototype.sizePrice = function() {
 
 Pizza.prototype.meatPrice = function() {
   this.currentPrice = this.currentPrice + (this.meatArray.length * 2.5);
+  return this.currentPrice;
+}
+
+Pizza.prototype.veggiePrice = function() {
+  this.currentPrice = this.currentPrice + (this.veggieArray.length * 1);
   return this.currentPrice;
 }
 
