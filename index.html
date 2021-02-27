@@ -12,45 +12,56 @@
 		<div class="jumbotron">
 			<h2>C Street Pizza Cafe</h2>
 		</div>
-		<h6>Menu</h6>
-		<form id="selections">
-			<select class="form-control" id="size">
-				<option disables selected value> -- select a size --</option>
-				<option>6 inch</option>
-				<option>10 inch</option>
-				<option>14 inch</option>
-			</select>
-			<div class="form-group">
-				<p>Meat Toppings</p>
-				<input type="checkbox" name="meat" value="sausage"> Sausage <br>
-				<input type="checkbox" name="meat" value="pepperoni"> Pepperoni <br>
-				<input type="checkbox" name="meat" value="chicken"> Grilled Chicken <br>
-				<input type="checkbox" name="meat" value="bacon"> Smoked Bacon <br>
-				<input type="checkbox" name="meat" value="can-bacon"> Canadian Bacon <br>
-				<input type="checkbox" name="meat" value="meatballs"> Hand Crafted Italian Meatballs <br>
-				<input type="checkbox" name="meat" value="anchovies"> Anchovies <br>
-				<input type="checkbox" name="meat" value="salami"> Genoa Salami <br>
-			</div>
-			<div class="form-group">
-				<p>Vegetable Toppings</p>
-				<input type="checkbox" name="veggies" value="onions"> Red Onions <br>
-				<input type="checkbox" name="veggies" value="garlic"> Garlic <br>
-				<input type="checkbox" name="veggies" value="peppers"> Green Peppers <br>
-				<input type="checkbox" name="veggies" value="olives"> Black Olives <br>
-				<input type="checkbox" name="veggies" value="broccoli"> Broccoli Florets <br>
-				<input type="checkbox" name="veggies" value="mushrooms"> Fresh Mushrooms <br>
-				<input type="checkbox" name="veggies" value="tomatoes"> Roma Tomatoes <br>
-				<input type="checkbox" name="veggies" value="jalapenos"> Jalapeno Peppers <br>
-				<input type="checkbox" name="veggies" value="banana-peppers"> Banana Peppers <br>
-				<input type="checkbox" name="veggies" value="pineapple"> Pineapple <br>
-				<input type="checkbox" name="veggies" value="basil"> Fresh Basil <br>
-				<input type="checkbox" name="veggies" value="artichokes"> Artichoke Hearts <br>
-			</div>
-			<button type="submit">Calculate Total</button>
-		</form>
-		<span id="total">
-			<p>The total of your order is: $<span id="output"></span></p>
-		</span>
+			<h3>Menu</h3>
+			<div class="row">
+				<div class="col-md-4">
+					<form id="selections">
+						<p>Pie Size</p>
+						<select class="form-control" id="size">
+							<option disables selected value> -- select a size --</option>
+							<option>6 inch</option>
+							<option>10 inch</option>
+							<option>14 inch</option>
+						</select>
+				</div>
+				<div class="col-md-4">
+					<div class="form-group">
+						<p>Meat Toppings</p>
+						<input type="checkbox" name="meat" value="sausage"> Ground Sausage <br>
+						<input type="checkbox" name="meat" value="pepperoni"> Imported Pepperoni <br>
+						<input type="checkbox" name="meat" value="chicken"> Grilled Chicken <br>
+						<input type="checkbox" name="meat" value="bacon"> Smoked Bacon <br>
+						<input type="checkbox" name="meat" value="can-bacon"> Canadian Bacon <br>
+						<input type="checkbox" name="meat" value="meatballs"> Hand Crafted Italian Meatballs <br>
+						<input type="checkbox" name="meat" value="ham"> Iberian Ham <br>
+						<input type="checkbox" name="meat" value="anchovies"> Anchovies <br>
+						<input type="checkbox" name="meat" value="beef"> Ground Angus Beef <br>
+						<input type="checkbox" name="meat" value="salami"> Genoa Salami <br>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="form-group">
+						<p>Vegetable Toppings</p>
+						<input type="checkbox" name="veggies" value="onions"> Red Onions <br>
+						<input type="checkbox" name="veggies" value="garlic"> Garlic <br>
+						<input type="checkbox" name="veggies" value="peppers"> Green Peppers <br>
+						<input type="checkbox" name="veggies" value="olives"> Black Olives <br>
+						<input type="checkbox" name="veggies" value="broccoli"> Broccoli Florets <br>
+						<input type="checkbox" name="veggies" value="mushrooms"> Fresh Mushrooms <br>
+						<input type="checkbox" name="veggies" value="tomatoes"> Roma Tomatoes <br>
+						<input type="checkbox" name="veggies" value="jalapenos"> Jalapeno Peppers <br>
+						<input type="checkbox" name="veggies" value="banana-peppers"> Banana Peppers <br>
+						<input type="checkbox" name="veggies" value="pineapple"> Pineapple <br>
+						<input type="checkbox" name="veggies" value="basil"> Fresh Basil <br>
+						<input type="checkbox" name="veggies" value="artichokes"> Artichoke Hearts <br>
+					</div>
+				</div>
+				<button type="submit">Calculate Total</button>
+			</form>
+			<span id="total">
+				<p>The total of your order is: $<span id="output"></span></p>
+			</span>
+		</div>
 	</div>
 </body>
 </html>

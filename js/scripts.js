@@ -12,7 +12,7 @@ Pizza.prototype.sizePrice = function() {
     this.currentPrice = 6;
   } 
   else if (this.size === "10 inch") {
-    this.currentPrice = 14;
+    this.currentPrice = 12;
   }
   else {
     this.currentPrice = 18;
@@ -46,15 +46,12 @@ $(document).ready(function() {
       veggieArray.push($(this).val());
     })
     let newOrder = new Pizza(size, meatArray, veggieArray)
-    // const sizePrice = newOrder.sizePrice();
-    // const meatPrice = newOrder.meatPrice();
-    // const veggiePrice = newOrder.veggiePrice();
     
     newOrder.sizePrice();
     newOrder.meatPrice();
     newOrder.veggiePrice();
-    const total = newOrder.currentPrice
-    // const total = sizePrice + meatPrice + veggiePrice;
+    const total = newOrder.currentPrice;
+    $("#total").show();
     $("#output").text(total)
   })
 })
