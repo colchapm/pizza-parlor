@@ -23,6 +23,9 @@ Pizza.prototype.sizePrice = function() {
 
 Pizza.prototype.meatPrice = function() {
   this.currentPrice = this.currentPrice + (this.meatArray.length * 2.5);
+  if (this.meatArray.includes("ham")) {
+    this.currentPrice += 15;
+  }
   return this.currentPrice;
 }
 
