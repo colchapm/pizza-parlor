@@ -22,53 +22,62 @@
 			</div>	
 		</div>
 			<hr>
-		<h3 class="store-title">Menu</h3>
-		<form id="selections">
-			<div class="row">
-				<div class="col-md-4">
-						<p>Pie Size</p>
+		<div class="menu">
+			<h3 class="store-title">Menu</h3>
+			<form id="selections">
+				<div class="row">
+					<div class="col-md-4">
+						<p class="menu-category-text">Dining Option</p>
+						<select class="form-control" id="dining-option">
+							<option disables selected value> -- select an option --</option>
+							<option>Take Out</option>
+							<option>Delivery</option>
+						</select>
+						<br>
+						<p class="menu-category-text">Pie Size</p>
 						<select class="form-control" id="size">
 							<option disables selected value> -- select a size --</option>
 							<option>6 inch</option>
 							<option>10 inch</option>
 							<option>14 inch</option>
 						</select>
-				</div>
-				<div class="col-md-4">
-					<div class="form-group">
-						<p>Meat Toppings</p>
-						<input type="checkbox" name="meat" value="sausage"> Ground Sausage <br>
-						<input type="checkbox" name="meat" value="pepperoni"> Imported Pepperoni <br>
-						<input type="checkbox" name="meat" value="chicken"> Grilled Chicken <br>
-						<input type="checkbox" name="meat" value="bacon"> Smoked Bacon <br>
-						<input type="checkbox" name="meat" value="can-bacon"> Canadian Bacon <br>
-						<input type="checkbox" name="meat" value="meatballs"> Hand Crafted Italian Meatballs <br>
-						<input type="checkbox" name="meat" value="ham"> Iberian Ham <br>
-						<input type="checkbox" name="meat" value="anchovies"> Anchovies <br>
-						<input type="checkbox" name="meat" value="beef"> Ground Angus Beef <br>
-						<input type="checkbox" name="meat" value="salami"> Genoa Salami <br>
 					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="form-group">
-						<p>Vegetable Toppings</p>
-						<input type="checkbox" name="veggies" value="onions"> Red Onions <br>
-						<input type="checkbox" name="veggies" value="garlic"> Garlic <br>
-						<input type="checkbox" name="veggies" value="peppers"> Green Peppers <br>
-						<input type="checkbox" name="veggies" value="olives"> Black Olives <br>
-						<input type="checkbox" name="veggies" value="broccoli"> Broccoli Florets <br>
-						<input type="checkbox" name="veggies" value="mushrooms"> Fresh Mushrooms <br>
-						<input type="checkbox" name="veggies" value="tomatoes"> Roma Tomatoes <br>
-						<input type="checkbox" name="veggies" value="jalapenos"> Jalapeno Peppers <br>
-						<input type="checkbox" name="veggies" value="banana-peppers"> Banana Peppers <br>
-						<input type="checkbox" name="veggies" value="pineapple"> Pineapple <br>
-						<input type="checkbox" name="veggies" value="basil"> Fresh Basil <br>
-						<input type="checkbox" name="veggies" value="artichokes"> Artichoke Hearts <br>
+					<div class="col-md-4">
+						<div class="form-group">
+							<p class="menu-category-text">Meat Toppings</p>
+							<input type="checkbox" name="meat" value="sausage"> Ground Sausage <br>
+							<input type="checkbox" name="meat" value="pepperoni"> Imported Pepperoni <br>
+							<input type="checkbox" name="meat" value="chicken"> Grilled Chicken <br>
+							<input type="checkbox" name="meat" value="bacon"> Smoked Bacon <br>
+							<input type="checkbox" name="meat" value="can-bacon"> Canadian Bacon <br>
+							<input type="checkbox" name="meat" value="meatballs"> Hand Crafted Italian Meatballs <br>
+							<input type="checkbox" name="meat" value="ham"> Iberian Ham <br>
+							<input type="checkbox" name="meat" value="anchovies"> Anchovies <br>
+							<input type="checkbox" name="meat" value="beef"> Ground Angus Beef <br>
+							<input type="checkbox" name="meat" value="salami"> Genoa Salami <br>
+						</div>
 					</div>
+					<div class="col-md-4">
+						<div class="form-group">
+							<p class="menu-category-text">Vegetable Toppings</p>
+							<input type="checkbox" name="veggies" value="onions"> Red Onions <br>
+							<input type="checkbox" name="veggies" value="garlic"> Garlic <br>
+							<input type="checkbox" name="veggies" value="peppers"> Green Peppers <br>
+							<input type="checkbox" name="veggies" value="olives"> Black Olives <br>
+							<input type="checkbox" name="veggies" value="broccoli"> Broccoli Florets <br>
+							<input type="checkbox" name="veggies" value="mushrooms"> Fresh Mushrooms <br>
+							<input type="checkbox" name="veggies" value="tomatoes"> Roma Tomatoes <br>
+							<input type="checkbox" name="veggies" value="jalapenos"> Jalapeno Peppers <br>
+							<input type="checkbox" name="veggies" value="banana-peppers"> Banana Peppers <br>
+							<input type="checkbox" name="veggies" value="pineapple"> Pineapple <br>
+							<input type="checkbox" name="veggies" value="basil"> Fresh Basil <br>
+							<input type="checkbox" name="veggies" value="artichokes"> Artichoke Hearts <br>
+						</div>
+					</div>
+					<button type="submit" class="button">Calculate Total</button>
 				</div>
-				<button type="submit">Calculate Total</button>
-			</div>
-		</form>
+			</form>
+		</div>
 			<span id="total">
 				<p>The total of your order is: $<span id="output"></span></p>
 			</span>

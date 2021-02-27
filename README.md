@@ -57,6 +57,7 @@ Test: "It should return price of the pie depending on number of veggie toppings 
 
 Expect(newOrder.veggiePrice()).toEqual(17.5)
 
+
 ## Known Bugs
 
 No known bugs at this time

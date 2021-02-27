@@ -1,3 +1,61 @@
 #total {
   display:none;
+  font-weight: bold;
+}
+
+.banner-photo {
+  width: 500px;
+  margin: 10px;
+  height: auto;
+  display: block;
+  padding: 10px;
+}
+
+
+.header {
+  text-align: right;
+}
+
+.store-title {
+  text-align: center;
+  font-size: 7;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.15;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 13px;
+  margin: 10px;
+  box-sizing: border-box;
+  display: block;
+}
+
+.supporting-text {
+  text-align: center;
+  font-size: smaller;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 4px;
+}
+
+.menu {
+  background-color: lightgrey;
+}
+
+.button {
+  background-color: darkred;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: auto;
+}
+
+.menu-category-text {
+  text-align: center;
+  color: darkred;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
 }
