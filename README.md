@@ -33,17 +33,29 @@ This webpage is for my pizza kitchen. It lets a user choose one or more individu
 
 Expect(let newOrder = new Pizza("10 inch", "pepperoni", "mushrooms")).toEqual(Pizza {size: "10 inch", meat: "pepperoni", veggies: "mushrooms", currentPrice:0})
 
+**Test 2** 
+
 Describe: Pizza.prototype.sizePrice()
 
-**Test 2** Test: "It should return price of the pie depending on the size that was selected"
+Test: "It should return price of the pie depending on the size that was selected"
 
 Expect(newOrder.sizePrice()).toEqual(14)
 
+**Test 3** 
+
 Describe: Pizza.prototype.meatPrice()
 
-**Test 3** Test: "It should return price of the pie depending on number of meat toppings selected"
+Test: "It should return price of the pie depending on number of meat toppings selected"
 
 Expect(newOrder.meatPrice()).toEqual(16.5)
+
+**Test 4**
+
+Describe: Pizza.prototype.veggiePrice()
+
+Test: "It should return price of the pie depending on number of veggie toppings selected"
+
+Expect(newOrder.veggiePrice()).toEqual(17.5)
 
 ## Known Bugs
 
