@@ -9,13 +9,23 @@
 </head>
 <body>
 	<div class="container">
-		<div class="jumbotron">
-			<h2>C Street Pizza Cafe</h2>
+		<div class="row">
+			<div class="col-lg-6">
+				<img src="img/cheese-pizza.jpg" alt="a picture of a pizza" 			class="banner-photo">
+			</div>
+			<div class="col-lg-6">
+				<br>
+				<br>
+				<h2 class="store-title">C Street Pizza Cafe</h2>
+				<p class="supporting-text">portland, or | bloomington, in | jamaica plain, ma</p>
+				<p class="supporting-text">est. 1990</p>
+			</div>	
 		</div>
-			<h3>Menu</h3>
+			<hr>
+		<h3 class="store-title">Menu</h3>
+		<form id="selections">
 			<div class="row">
 				<div class="col-md-4">
-					<form id="selections">
 						<p>Pie Size</p>
 						<select class="form-control" id="size">
 							<option disables selected value> -- select a size --</option>
@@ -57,11 +67,12 @@
 					</div>
 				</div>
 				<button type="submit">Calculate Total</button>
-			</form>
+			</div>
+		</form>
 			<span id="total">
 				<p>The total of your order is: $<span id="output"></span></p>
 			</span>
-		</div>
+
 	</div>
 </body>
 </html>
