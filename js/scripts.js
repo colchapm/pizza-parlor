@@ -36,12 +36,25 @@ Pizza.prototype.veggiePrice = function() {
 $(document).ready(function() {
   $("form#selections").submit(function(event) {
     event.preventDefault();
-    meatArray = ["pepperoni"];
-    veggieArray = ["mushrooms"]
-    let size = "10 inch"
-    
+    let size = $("#size").val();
+    meatArray = [];
+    veggieArray = [];
+    $("input:checkbox[name=meat]:checked").each(function(){
+      meatArray.push($(this).val());
+    });
+    $("input:checkbox[name=veggies]:checked").each(function(){
+      veggieArray.push($(this).val());
+    })
     let newOrder = new Pizza(size, meatArray, veggieArray)
-    let total = newOrder.sizePrice();
+    // const sizePrice = newOrder.sizePrice();
+    // const meatPrice = newOrder.meatPrice();
+    // const veggiePrice = newOrder.veggiePrice();
+    
+    newOrder.sizePrice();
+    newOrder.meatPrice();
+    newOrder.veggiePrice();
+    const total = newOrder.currentPrice
+    // const total = sizePrice + meatPrice + veggiePrice;
     $("#output").text(total)
   })
 })
