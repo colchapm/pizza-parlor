@@ -1,13 +1,13 @@
 //Business Logic
 
-function Pizza(size, meat, veggies) {
+function Pizza(size, meatArray, veggies) {
   this.size = size;
-  this.meat = meat;
+  this.meatArray = meatArray;
   this.veggies = veggies;
   this.currentPrice = 0;
 }
 
-Pizza.prototype.sizePrice = function(size) {
+Pizza.prototype.sizePrice = function() {
   if (this.size === "6 inch") {
     this.currentPrice = 6;
   } 
@@ -20,10 +20,16 @@ Pizza.prototype.sizePrice = function(size) {
   return this.currentPrice;
 }
 
-
+Pizza.prototype.meatPrice = function() {
+  this.currentPrice = this.currentPrice + (this.meatArray.length * 2.5);
+  return this.currentPrice;
+}
 
 
 //User Interface Logic
 
+meatArray = ["pepperoni"];
+veggieArray = ["mushrooms"]
+let size = "10 inch"
 
-let newOrder = new Pizza("10 inch", "pepperoni", "mushrooms")
+let newOrder = new Pizza(size, meatArray, veggieArray)
