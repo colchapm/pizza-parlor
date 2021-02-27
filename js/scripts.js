@@ -33,8 +33,16 @@ Pizza.prototype.veggiePrice = function() {
 
 //User Interface Logic
 
-meatArray = ["pepperoni"];
-veggieArray = ["mushrooms"]
-let size = "10 inch"
+$(document).ready(function() {
+  $("form#selections").submit(function(event) {
+    event.preventDefault();
+    meatArray = ["pepperoni"];
+    veggieArray = ["mushrooms"]
+    let size = "10 inch"
+    
+    let newOrder = new Pizza(size, meatArray, veggieArray)
+    let total = newOrder.sizePrice();
+    $("#output").text(total)
+  })
+})
 
-let newOrder = new Pizza(size, meatArray, veggieArray)
