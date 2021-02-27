@@ -9,10 +9,10 @@ function Pizza(size, meatArray, veggieArray, diningOption) {
 }
 
 Pizza.prototype.sizePrice = function() {
-  if (this.size === "6 inch") {
+  if (this.size === "6 inch ($6)") {
     this.currentPrice = 6;
   } 
-  else if (this.size === "10 inch") {
+  else if (this.size === "10 inch ($12)") {
     this.currentPrice = 12;
   }
   else {
@@ -35,7 +35,7 @@ Pizza.prototype.veggiePrice = function() {
 }
 
 Pizza.prototype.diningOptionPrice =function() {
-  if (this.diningOption === "Delivery") {
+  if (this.diningOption === "Delivery ($5 delivery fee)") {
     this.currentPrice += 5;
   }
   return this.currentPrice;
