@@ -29,7 +29,9 @@ This webpage is for my pizza kitchen. It lets a user choose one or more individu
 
 ## Tests
 
+**Test 1** Test: "It should create a Pizza object".
 
+Expect(let newOrder = new Pizza("10 inch", "pepperoni", "mushrooms")).toEqual(Pizza {size: "10 inch", meat: "pepperoni", veggies: "mushrooms", currentPrice:0})
 
 ## Known Bugs
 
