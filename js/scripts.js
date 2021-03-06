@@ -22,16 +22,14 @@ Pizza.prototype.sizePrice = function() {
 }
 
 Pizza.prototype.meatPrice = function() {
-  this.currentPrice = this.currentPrice + (this.meatArray.length * 2.5);
   if (this.meatArray.includes("ham")) {
     this.currentPrice += 15;
   }
-  return this.currentPrice;
+  return this.currentPrice += (this.meatArray.length * 2.5);
 }
 
 Pizza.prototype.veggiePrice = function() {
-  this.currentPrice = this.currentPrice + (this.veggieArray.length * 1);
-  return this.currentPrice;
+  return this.currentPrice += (this.veggieArray.length * 1);
 }
 
 Pizza.prototype.diningOptionPrice =function() {
@@ -68,4 +66,5 @@ $(document).ready(function() {
     $("#output").text(total)
   })
 })
+
 
