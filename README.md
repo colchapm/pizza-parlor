@@ -57,6 +57,14 @@ Test: "It should return price of the pie depending on number of veggie toppings 
 
 Expect(newOrder.veggiePrice("fresh mushrooms")).toEqual(17.5)
 
+**Test 5**
+
+Describe: Pizza.prototype.diningOptionPrice()
+
+Test: "It should return price of the order depending on take out or delivery was selected"
+
+Expect(newOrder.diningOptionPrice("Delivery:)).toEqual(22.5)
+
 
 ## Known Bugs
 
