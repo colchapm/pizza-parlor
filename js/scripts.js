@@ -47,8 +47,8 @@ $(document).ready(function() {
     event.preventDefault();
     let diningOption = $("#dining-option").val();
     let size = $("#size").val();
-    meatArray = [];
-    veggieArray = [];
+    let meatArray = [];
+    let veggieArray = [];
     $("input:checkbox[name=meat]:checked").each(function(){
       meatArray.push($(this).val());
     });
