@@ -39,7 +39,7 @@ Describe: Pizza.prototype.sizePrice()
 
 Test: "It should return price of the pie depending on the size that was selected"
 
-Expect(newOrder.sizePrice()).toEqual(14)
+Expect(newOrder.sizePrice("14 inch")).toEqual(18)
 
 **Test 3** 
 
@@ -47,7 +47,7 @@ Describe: Pizza.prototype.meatPrice()
 
 Test: "It should return price of the pie depending on number of meat toppings selected"
 
-Expect(newOrder.meatPrice()).toEqual(16.5)
+Expect(newOrder.meatPrice("pepperoni")).toEqual(16.5)
 
 **Test 4**
 
@@ -55,7 +55,7 @@ Describe: Pizza.prototype.veggiePrice()
 
 Test: "It should return price of the pie depending on number of veggie toppings selected"
 
-Expect(newOrder.veggiePrice()).toEqual(17.5)
+Expect(newOrder.veggiePrice("fresh mushrooms")).toEqual(17.5)
 
 
 ## Known Bugs
